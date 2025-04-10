@@ -48,6 +48,45 @@ py -m pip install --upgrade scikit-learn
 |NLTK (Natural Language Toolkit)| The NLTK Python module has facilitated the datasets' preprocessing.|
 
 
+**5. Freeze Dependencies into requirements.txt** 
+Windows: 
+```shell
+py -m pip freeze > requirements.txt
+```
+
+**6. Add .gitignore File**
+Add the .gitignore file to the root project folder if it is not created during the repo setup.
+Add the following lines to ignore unnecessary files: 
+- .venv/
+- .vscode/
+- .ipynb_checkpoints/
+
+
+## Exploratory Data Analysis
+**Create a Jupyter Notebooks file to begin EDA:**
+To run Jupyter within VS Code, use the Jupyter extension. Go to the Extensions pane on the left sidebar (the icon looks like four squares), search for "Jupyter," and install the "Jupyter" extension provided by Microsoft. If already installed, check for available updates for this extension. 
+
+Open the newly create notebook and ceate/select the notebook kernel.
+
+**Outline Notebook with Markdown and Code Cells:**
+The following markdown cells should be included, with code cells in between.
+- Import Dependencies 
+- Data Acquisition
+- Initial Data Inspection
+- Initial Data Transformation and Feature Engineering, if needed
+- Initial Descriptive Statistics 
+- Initial Data Distributions
+- Initial Visualizations
+
+**Final Modeling Commit** 
+Ensure all final changes are committed to GitHub.
+```bash
+git add.
+git commit -m "final modeling"                         
+git push origin main
+---
+
+
 ## :dart: Project Objectives
 
 - [x] Explore methods for and carry out scraping of Bitcoin-related tweets
